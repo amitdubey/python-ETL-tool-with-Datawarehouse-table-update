@@ -1,3 +1,15 @@
 {
-    "python.pythonPath": "/Users/amitdubey/opt/anaconda3/bin/python"
+    "python.pythonPath": "/Users/amitdubey/opt/anaconda3/bin/python",
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.autofetch": true,
+    "git.alwaysSignOff": true,
+    "git.enableSmartCommit": true,
+    "git.postCommitCommand": "push",
+    "git.rebaseWhenSync": true,
+    "git.enableCommitSigning": true,
+    "git.fetchOnPull": true,
+    "gitlens.blame.ignoreWhitespace": true,
+    "git.autoStash": true,
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true
 }
