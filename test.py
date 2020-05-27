@@ -488,8 +488,8 @@ from sqlalchemy import create_engine
 # connect to server
 
 connection = mysql.connector.connect(user='root', password='test@123',
-                            host='localhost', database='microsoft')
-engine = sqlalchemy.create_engine('mysql+pymysql://root:test@123@localhost:3306/microsoft')
+                            host='localhost', database='testdb')
+engine = sqlalchemy.create_engine('mysql+pymysql://root:test@123@localhost:3306/testdb')
 connection = engine.connect()
 
 db_name = 'microsoft'
@@ -525,7 +525,7 @@ print('Fact tables updated.')
 ## another good library to connect and retrive data from mysql server or PyODBC for MS-SQLServer
 import pymysql
 
-db_connection_str = 'mysql+pymysql://root:test@123@localhost/microsoft'
+db_connection_str = 'mysql+pymysql://root:test@123@localhost/testdb'
 db_connection = create_engine(db_connection_str)
 
 DfFact = pd.read_sql("""
@@ -593,7 +593,7 @@ DfFact = pd.read_sql("""
 from sqlalchemy_schemadisplay import create_schema_graph
 from sqlalchemy import MetaData
 
-graph = create_schema_graph(metadata=MetaData('mysql+pymysql://root:test@123@localhost/microsoft'))
+graph = create_schema_graph(metadata=MetaData('mysql+pymysql://root:test@123@localhost/testdb'))
 graph.write_png('my_erd.png')
 
 

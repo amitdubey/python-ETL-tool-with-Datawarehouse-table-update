@@ -1,4 +1,4 @@
---test SQL
+
 ##################Note to Self ###########
 # Author  : Amit Dubey
 # Date : May10th,2020
