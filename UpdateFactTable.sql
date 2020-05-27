@@ -6,7 +6,7 @@
 ###############################################
 
 
-USE microsoft;
+USE testdb;
 
 DROP TEMPORARY TABLE if exists FactTbl_may5_temp;
 
